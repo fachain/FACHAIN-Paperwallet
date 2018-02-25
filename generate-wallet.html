@@ -10228,7 +10228,7 @@ Bitcoin.Util = {
 		#detailbip38commands { display: none; padding-top: 5px; }	
 		.answer { padding: 0 15px 10px 25px; text-align: left; display: none; font-size: 80%; }
 
-		#paperadvancedcommands { float: left; font-size: 12px; margin-left: 10px; padding: 4px; border: 1px dotted #CCC;}
+		#paperadvancedcommands {width: 250px; color: #fff; background: #FF5722; float: left; font-size: 17px; margin-left: 10px; padding: 4px; border: 1px dotted #CCC;}
 		
 		#paperencryptstatus { margin-top: 5px; font-size: 12px; line-height: 20px; }
 			
@@ -10523,7 +10523,7 @@ Bitcoin.Util = {
 						<span><label id="paperlabeladdressestogenerate">Addresses to generate:</label> <input type="text" id="paperlimit" /></span>
                     </div>
                     
-                    <div id="keyButtons" style="display: block; float: left;">
+                    <div id="keyButtons" style="margin-top:  7px;display: block;float: left;">
                     <input type="button" id="papergenerate1" value="RANDOM GENERATE NEW WALLET" onClick="ninja.wallets.paperwallet.build(document.getElementById('paperlimit').value * 1, document.getElementById('paperlimitperpage').value * 1, !document.getElementById('paperart').checked, document.getElementById('paperpassphrase').value); printCounter=0;" />
 
                     <input type="button" id="papergenerate2" value="Enter my own key, dice rolls, brain wallet, etc..." onClick="ninja.wallets.paperwallet.toggleVanityField(true);" />
@@ -10573,7 +10573,7 @@ Bitcoin.Util = {
                     </div>
 
 					<div id="paperadvancedcommands">
-						<input type="checkbox" id="paperencrypt" onChange="ninja.wallets.paperwallet.toggleEncryptSettings(this.checked);" />BIP38 Encrypt
+						<input style="font-size: 20px;" type="checkbox" id="paperencrypt" onChange="ninja.wallets.paperwallet.toggleEncryptSettings(this.checked);" />BIP38 Encrypt !IMPORTANT!
 						<div id="paperencryptstatus" class="hide">
 							<div id="paperencryptpassphrase"></div>
                             <input type="button" value="Change Passphrase" onClick="ninja.wallets.paperwallet.toggleEncryptSettings(true);" style="font-size: 10px;">
